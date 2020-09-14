@@ -10,7 +10,7 @@ public class Conta {
 
     Conta(){
         Conta.totalDeContas++;
-    };
+    }
 
     Conta(int numero, Cliente titular, double saldo, double limite){
        this.numero = numero;
@@ -77,7 +77,7 @@ public class Conta {
         }
     }
 
-    void imprimeDados(){
+    public void imprimeDados(){
         System.out.println("===========================");
         System.out.println("Número " + this.numero);
         System.out.println("Titular " + this.titular.getNome());
