@@ -1,4 +1,8 @@
-package conta;
+package array;
+
+import conta.Cliente;
+import conta.Conta;
+
 
 public class ProgramaArray {
     public static void main(String[] args) {

@@ -6,7 +6,7 @@ public class Cliente {
     private String dataNascimento;
     private String endereco;
 
-    public Cliente(){}
+    public Cliente(){};
 
     public Cliente(String nome, long cpf, String dataNascimento, String endereco) {
         this.nome = nome;
@@ -17,5 +17,8 @@ public class Cliente {
 
     public String getNome() {
         return this.nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }

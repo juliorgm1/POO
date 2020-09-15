@@ -12,7 +12,7 @@ public class Conta {
         Conta.totalDeContas++;
     }
 
-    Conta(int numero, Cliente titular, double saldo, double limite){
+    public Conta(int numero, Cliente titular, double saldo, double limite){
        this.numero = numero;
        this.titular = titular;
        this.saldo = saldo;

@@ -3,8 +3,8 @@ package conta;
 public class Programa2 {
     public static void main(String[] args) {
 
-        Conta c1 = new Conta();
-        Conta c2 = new Conta();
+        Cliente c1 = new Cliente("João", 7979l,"07/07/2007","Rua X");
+        Cliente c2 = new Cliente();
 
         System.out.println(Conta.getTotalDeContas());
 //
@@ -16,7 +16,7 @@ public class Programa2 {
 //
 ////        cliente1.nome = "Fabrício Mota";
 ////
-////        c1.titular = cliente1;
+//           c1.titular = cliente1;
 ////        c1.saldo = 150;
 ////
 ////        c2.titular = cliente2;

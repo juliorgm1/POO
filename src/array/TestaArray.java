@@ -11,7 +11,7 @@ public class TestaArray {
        bilhetes[4] = 28;
 
         System.out.println(bilhetes[1]);
-        System.out.println(bilhetes[4]);
+        System.out.println(bilhetes[5]);
 
         String cars[] = {"Uno", "Ka", "Palio", "Gol" };
         cars[1] = "Ford Ka";
