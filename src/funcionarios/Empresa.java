@@ -17,4 +17,10 @@ public class Empresa {
             ultimoFuncionario++;
         }else {System.out.println("Não há vagas");}
     }
+
+    public void imprimeFuncionarios(){
+        for (Funcionario funcionario: listaFuncionarios) {
+            System.out.println(funcionario);
+        }
+    }
 }

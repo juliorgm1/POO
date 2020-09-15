@@ -23,4 +23,29 @@ public class Funcionario {
     public double ganhoAnual(){
         return this.salario * MESES;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getDepartamento() {
+        return departamento;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    public String getDataEntrada() {
+        return dataEntrada;
+    }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                "nome='" + nome + '\'' +
+                ", departamento='" + departamento + '\'' +
+                ", salario=" + salario +
+                '}';
+    }
 }
