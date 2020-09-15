@@ -19,16 +19,7 @@ public class TestaEmpresa {
         senac.add(novoFuncionario);
         senac.add(novoFuncionario);
         senac.add(novoFuncionario);
-
     }
-
-
-
-
-
-
-
-
 
     private static Funcionario[] createFuncionarios(){
         Funcionario []listaFuncionario = new Funcionario[10];
