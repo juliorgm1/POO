@@ -48,4 +48,6 @@ public class Funcionario {
                 ", salario=" + salario +
                 '}';
     }
+
+
 }

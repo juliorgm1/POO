@@ -20,7 +20,7 @@ public class TestaEmpresa {
         senac.add(novoFuncionario);
         senac.add(novoFuncionario);
 
-        senac.imprimeFuncionarios();
+        senac.imprimeTodosFuncionarios();
 
     }
 

@@ -18,9 +18,9 @@ public class Empresa {
         }else {System.out.println("Não há vagas");}
     }
 
-    public void imprimeFuncionarios(){
+    public void imprimeTodosFuncionarios(){
         for (Funcionario funcionario: listaFuncionarios) {
-            System.out.println(funcionario);
+            System.out.println(funcionario.toString());
         }
     }
 }
