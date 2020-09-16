@@ -1,11 +1,11 @@
-package heranca;
+package abastratas;
 
 public class Gerente extends Funcionario {
     private int senha;
     private int numeroFuncionarios;
 
-    public Gerente(String nome, double salario) {
-        super(nome, salario);
+    public Gerente(String nome, long cpf) {
+        super(nome, cpf);
     }
 
     Gerente(String nome, long cpf, double salario, int senha, int numeroFuncionarios) {
