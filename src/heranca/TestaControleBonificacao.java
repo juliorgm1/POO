@@ -13,8 +13,6 @@ public class TestaControleBonificacao {
         controle.registra(vitor);
         System.out.println("Bonificação Angelica + Fernanda");
 
-
-
         System.out.println(controle.getTotalBonificacoes());
     }
 }

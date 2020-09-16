@@ -19,6 +19,10 @@ public class Conta {
        this.limite = limite;
     }
 
+    public Conta( double saldo){
+        this.saldo = saldo;
+    }
+
     public static int getTotalDeContas() {
         return Conta.totalDeContas;
     }
