@@ -1,12 +1,12 @@
 package conta;
 
-public class Conta {
+public abstract class Conta {
     //Atributos
-    private int numero;
-    private Cliente titular;
-    private double saldo;
-    private double limite;
-    private static int totalDeContas;
+    protected int numero;
+    protected Cliente titular;
+    protected double saldo;
+    protected double limite;
+    protected static int totalDeContas;
 
     Conta(){
         Conta.totalDeContas++;
@@ -60,7 +60,7 @@ public class Conta {
     }
 
     //metodos
-    boolean saca(double valor){
+    public boolean saca(double valor){
         if (this.saldo >= valor) {
             this.saldo -= valor;
             return true;
@@ -70,23 +70,16 @@ public class Conta {
         return false;
     }
 
-    void deposita(double valor){
+    public void deposita(double valor){
         this.saldo += valor;
     }
 
-    void transferePara(Conta contaDestino, double valor){
+    public void transferePara(Conta contaDestino, double valor){
         if(this.saca(valor)){
             contaDestino.deposita(valor);
             System.out.println("Saque realizado com sucesso!");
         }
     }
 
-    public void imprimeDados(){
-        System.out.println("===========================");
-        System.out.println("Número " + this.numero);
-        System.out.println("Titular " + this.titular.getNome());
-        System.out.println("Saldo " + this.saldo);
-        System.out.println("Limite " + this.limite);
-        System.out.println("===========================\n\n");
-    }
+    public abstract void imprimeDados();
 }
